@@ -82,7 +82,7 @@ export default function Footer() {
       <hr className="mb-7"/>
         <img
           className="block h-8 w-auto mx-auto mb-7"
-          src="http://localhost:3000/pasisiadevwhite.png"
+          src="https://pasisiadevelopers.vercel.app/pasisiadevwhite.png"
           alt="logo"
         />
       

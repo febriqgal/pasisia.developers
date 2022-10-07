@@ -38,12 +38,12 @@ export default function Navbar() {
                 <div className="flex flex-shrink-0 items-center">
                   <img
                     className="block h-8 w-auto lg:hidden"
-                    src="http://localhost:3000/pasisiadevwhite.png"
+                    src="https://pasisiadevelopers.vercel.app/pasisiadevwhite.png"
                     alt="Your Company"
                   />
                   <img
                     className="hidden h-8 w-auto lg:block"
-                    src="http://localhost:3000/pasisiadevwhite.png"
+                    src="https://pasisiadevelopers.vercel.app/pasisiadevwhite.png"
                     alt="Your Company"
                   />
                 </div>
