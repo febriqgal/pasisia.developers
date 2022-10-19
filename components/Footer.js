@@ -78,7 +78,7 @@ export default function Footer() {
   };
   return (
     <footer className="bg-white">
-      <div className="max-w-7xl mx-auto py-12 px-4 overflow-hidden sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto py-5 px-4 overflow-hidden sm:px-6 lg:px-8">
       <hr className="mb-7"/>
         <img
           className="block h-8 w-auto mx-auto mb-7"
