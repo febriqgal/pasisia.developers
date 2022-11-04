@@ -27,7 +27,7 @@ export default function Home() {
                 alt="febriqgal"
               />
             </div>
-            <div className="text-center mt-5">
+            <div className="text-center mb-4">
               <h1 className="hover:underline font-bold text-xl text-slate-700">
                 {"Febriqgal Purnama, S.Kom (OTW🤣)"}
               </h1>
