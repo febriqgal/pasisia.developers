@@ -23,7 +23,7 @@ export default function index() {
         </div>
         <div className="text-center mt-5">
           <h1 className="hover:underline font-bold text-xl text-slate-700">
-            Febriqgal Purnama, S.Kom
+            {"Febriqgal Purnama, S.Kom (OTW🤣)"}
           </h1>
           <h2 className="text-slate-400">Web & Mobile App Developer</h2>
         </div>
