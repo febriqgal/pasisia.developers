@@ -1,16 +1,8 @@
 /* eslint-disable react/jsx-key */
 /* eslint-disable @next/next/no-img-element */
-import { Fragment } from "react";
-import { Disclosure, Menu, Transition } from "@headlessui/react";
-import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/react/24/outline";
+import { Disclosure } from "@headlessui/react";
+import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
-
-const navigation = [
-  { name: "Home", href: "/", current: false },
-  { name: "Team", href: "team", current: false },
-  { name: "Projects", href: "projects", current: false },
-  { name: "Calendar", href: "#", current: false },
-];
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
@@ -39,31 +31,40 @@ export default function Navbar() {
                   <img
                     className="block h-8 w-auto lg:hidden"
                     src="https://pasisiadevelopers.vercel.app/pasisiadevwhite.png"
-                    alt="Your Company"
+                    alt="Pasisia Developers"
                   />
                   <img
                     className="hidden h-8 w-auto lg:block"
                     src="https://pasisiadevelopers.vercel.app/pasisiadevwhite.png"
-                    alt="Your Company"
+                    alt="Pasisia Developers"
                   />
                 </div>
                 <div className="hidden sm:ml-6 sm:block">
                   <div className="flex space-x-4">
-                    {navigation.map((item) => (
-                      <Link key={item.name} href={item.href}>
-                        <a
-                          className={classNames(
-                            item.current
-                              ? "bg-gray-900 text-white"
-                              : "text-gray-600 hover:bg-gray-700 hover:text-white",
-                            "px-3 py-2 rounded-md text-sm font-bold"
-                          )}
-                          aria-current={item.current ? "page" : undefined}
-                        >
-                          {item.name}
-                        </a>
-                      </Link>
-                    ))}
+                    <Link href={"/"}>
+                      <a
+                        className="text-gray-600 hover:bg-gray-700 hover:text-white
+                          px-3 py-2 rounded-md text-sm font-bold"
+                      >
+                        Home
+                      </a>
+                    </Link>
+                    <Link href={"#team"}>
+                      <a
+                        className="text-gray-600 hover:bg-gray-700 hover:text-white
+                          px-3 py-2 rounded-md text-sm font-bold"
+                      >
+                        Team
+                      </a>
+                    </Link>
+                    <Link href={"#project"}>
+                      <a
+                        className="text-gray-600 hover:bg-gray-700 hover:text-white
+                          px-3 py-2 rounded-md text-sm font-bold"
+                      >
+                        Project
+                      </a>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -71,23 +72,31 @@ export default function Navbar() {
           </div>
 
           <Disclosure.Panel className="sm:hidden">
-            <div className="space-y-1 px-2 pt-2 pb-3">
-              {navigation.map((item) => (
-                <Disclosure.Button
-                  key={item.name}
-                  as="a"
-                  href={item.href}
-                  className={classNames(
-                    item.current
-                      ? "bg-gray-900 text-white"
-                      : "text-gray-600 hover:bg-gray-700 hover:text-white",
-                    "block px-3 py-2 rounded-md text-base font-medium"
-                  )}
-                  aria-current={item.current ? "page" : undefined}
+            <div className="flex flex-col space-y-1 px-2 pt-2 pb-3">
+              <Link href={"/"}>
+                <a
+                  className="text-gray-600 hover:bg-gray-700 hover:text-white
+                          px-3 py-2 rounded-md text-sm font-bold"
                 >
-                  {item.name}
-                </Disclosure.Button>
-              ))}
+                  Home
+                </a>
+              </Link>
+              <Link href={"#team"}>
+                <a
+                  className="text-gray-600 hover:bg-gray-700 hover:text-white
+                          px-3 py-2 rounded-md text-sm font-bold"
+                >
+                  Team
+                </a>
+              </Link>
+              <Link href={"#project"}>
+                <a
+                  className="text-gray-600 hover:bg-gray-700 hover:text-white
+                          px-3 py-2 rounded-md text-sm font-bold"
+                >
+                  Project
+                </a>
+              </Link>
             </div>
           </Disclosure.Panel>
         </>
