@@ -18,7 +18,7 @@ export default function Home() {
             <h1>Home</h1>
           </main>
         </section>
-        <section id="team" className="bg-slate-400 rounded-xl">
+        <section id="team" className="bg-slate-400 rounded-xl mb-4">
           <div className={styles.main}>
             <div className="h-[200px] w-[200px] rounded-full overflow-clip">
               <Image
