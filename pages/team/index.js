@@ -8,7 +8,7 @@ import Head from "next/head";
 export default function index() {
   return (
     <Layout>
-       <Head>
+      <Head>
         <title>Team - Pasisia Developers</title>
         <meta name="description" content="Pasisia Developers" />
         <link rel="icon" href="/logo.png" />
@@ -23,7 +23,7 @@ export default function index() {
         </div>
         <div className="text-center mt-5">
           <h1 className="hover:underline font-bold text-xl text-slate-700">
-            Febriqgal Purnama
+            Febriqgal Purnama, S.Kom
           </h1>
           <h2 className="text-slate-400">Web & Mobile App Developer</h2>
         </div>
